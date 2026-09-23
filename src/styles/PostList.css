@@ -1,0 +1,15 @@
+.post-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.post-list__heading {
+  font-size: 1.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.post-list__grid {
+  display: grid;
+  gap: 1.25rem;
+}

@@ -1,17 +1,18 @@
 :root {
-  --color-bg: #f4f6fb;
-  --color-surface: #ffffff;
-  --color-text: #1f2933;
-  --color-muted: #66707a;
-  --color-primary: #4f46e5;
-  --color-primary-dark: #3f37c9;
-  --color-border: #e2e6ee;
-  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
-  --shadow-md: 0 6px 18px rgba(15, 23, 42, 0.08);
-  --radius: 12px;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif;
-  line-height: 1.6;
+  --paper: #f3ede1;
+  --paper-2: #ece4d3;
+  --ink: #211d18;
+  --muted: #6f665a;
+  --rust: #b5502a;
+  --rust-dark: #8f3d1f;
+  --line: #d8cdb8;
+
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  font-family: var(--sans);
+  line-height: 1.65;
+  color: var(--ink);
 }
 
 * {
@@ -20,8 +21,13 @@
 
 body {
   margin: 0;
-  background: var(--color-bg);
-  color: var(--color-text);
+  background: var(--paper);
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--rust);
+  color: var(--paper);
 }
 
 a {

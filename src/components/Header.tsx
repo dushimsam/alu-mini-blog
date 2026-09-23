@@ -5,9 +5,11 @@ function Header() {
     <header className="header">
       <div className="header__brand">
         <span className="header__logo-mark" aria-hidden="true">
-          {'</>'}
+          ☁
         </span>
-        <span className="header__logo-text">Dev Insights</span>
+        <span className="header__logo-text">
+          Dev<b>Insights</b>
+        </span>
       </div>
 
       <nav className="header__nav">
@@ -17,7 +19,7 @@ function Header() {
           style={{ fontWeight: 600 }}
           onClick={(e) => e.preventDefault()}
         >
-          + New Post
+          New Post
         </a>
       </nav>
     </header>
